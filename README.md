@@ -1,4 +1,4 @@
-# 8-1Mux
+# 8:1Mux
 
 -This is a mini project to design and implement an 8:1 multiplexer (MUX) using three Verilog modeling styles – Behavioral Model, Dataflow model, Structured model.
 
