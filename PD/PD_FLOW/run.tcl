@@ -3,22 +3,22 @@ set_db lef_library /home/install/FOUNDRY/digital/45nm/LIBS/lef/gsclib045.fixed.l
 
 set_db library  slow.lib
     
-read_hdl {./traffilight.v}
+read_hdl {./mux8_1.v}
 
 elaborate
 
-read_sdc ./trafficlight_sdc.sdc
+read_sdc ./mux8_1_sdc.sdc
 
 syn_generic
 syn_map
 syn_opt
 
-write_hdl > counter_netlist.v
-write_sdc  > output_constraint.sdc
+write_hdl > mux8_1_netlist.v
+write_sdc  > mux8_1_constraint.sdc
    
 gui_show
 
-report timing > counter_timing.rpt
-report power > counter_power.rpt
-report area > counter_cell.rpt
-report gates > counter_gates.rpt
+report timing > mux8_1_timing.rpt
+report power > mux8_1_power.rpt
+report area > mux8_1_cell.rpt
+report gates > mux8_1_gates.rpt
